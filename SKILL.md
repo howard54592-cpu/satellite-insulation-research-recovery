@@ -11,25 +11,36 @@
 
 ### 2. 搜索渠道管理
 - 监控各渠道成功率
-- 动态调整渠道权重
+- 动态调整权重
 - 支持增删搜索渠道
+- **配置**: [references/channels.md](references/channels.md)
 
 ### 3. Skill 说明更新
 - 定时/事件触发配置
 - 研究方向动态调整
 - 学术关键字库管理
+- **配置**: [references/keywords.md](references/keywords.md)
 
 ### 4. 版本管理
 - 记录版本变更历史
 - 一键切换版本
 - 版本对比功能
+- **配置**: [references/versions.md](references/versions.md)
+
+## 引用配置文件
+
+| 配置文件 | 用途 |
+|----------|------|
+| [references/channels.md](references/channels.md) | 搜索渠道及权重配置 |
+| [references/keywords.md](references/keywords.md) | 学术关键字库及研究方向 |
+| [references/versions.md](references/versions.md) | 版本历史及切换 |
 
 ## 文件结构
 ```
 skill-name/
 ├── SKILL.md
 ├── assets/          # 生成的索引文件
-├── references/     # 配置：渠道权重、关键字
+├── references/     # ⬆️ 配置文件（被SKILL.md引用）
 └── scripts/       # 迭代脚本
 ```
 
